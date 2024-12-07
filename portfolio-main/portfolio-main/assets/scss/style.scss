@@ -1,0 +1,43 @@
+@import "./variables", "./reset", "./menu", "./home", "./about", "./experience",
+  "./projects", "./services", "./skills", "./footer";
+
+.typewriter:after {
+  content: "|";
+  margin-left: $gap-1;
+  opacity: 1;
+  animation: blink 1s infinite;
+  color: $color-main;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.grid-layout {
+  @include grid-layout();
+}
+
+/* CSS for educational background */
+.educational-background {
+  font-size: 16px; /* Adjust size */
+  color: #333; /* Dark gray text */
+  line-height: 1.5; /* Space out list items */
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0;
+}
+
+.educational-background li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+h4.delayMediumReveal {
+  font-size: 20px; /* Larger heading */
+  font-weight: bold;
+  color: #4A4A4A; /* A darker color for the heading */
+  margin-top: 20px; /* Space above the heading */
+}
